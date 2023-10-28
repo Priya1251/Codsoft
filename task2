@@ -1,0 +1,46 @@
+#Design a simple calculator with basic arithmetic operations.
+#Prompt the user to input two numbers and an operation choice.
+#Perform the calculation and display the result
+print("--------------------****CALCULATOR****----------------------")
+a=int(input("Enter number:"))   
+b=int(input("Enter number:"))   
+while True:
+    operations=['add', 'subtract','multiply','divide']
+    options=input("enter choice:")
+    if options not in operations:
+        print("invalid choice")
+        continue
+    if options=='add':
+      result=a+b
+      print("operations:",a,"+",b,"=",result)
+    elif options=='subtract':
+      result=a-b
+      print("operations:",a,"-",b,"=",result)
+    elif options=='multiply':
+      result=a*b
+      print("operations:",a,"*",b,"=",result)
+    elif options=='divide':
+       if b==0 or a==0:
+            print("Cannot divide by zero")
+       else:
+        result=a/b
+        print("operations:",a,"/",b,"=",result) 
+    perform_again = input("Do you want to perform_again? (y/n): ")
+    if perform_again != "y":
+        print(" Thank you!!")
+        break
+        
+      
+          
+
+
+
+
+
+
+
+
+
+
+
+
